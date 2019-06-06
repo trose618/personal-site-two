@@ -19,6 +19,7 @@ test('should click around', async () => {
     await page.click('.burger');
 
     await page.waitFor(3000);
-    await page.close();
+
+    await browser.close()
 
 })
