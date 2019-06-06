@@ -1,0 +1,402 @@
+/* * {
+    box-sizing: content-box;
+} */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: silver;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    background-color: azure;
+    left: 0;
+    height: 60px;
+}
+
+#content-div {
+    position: relative;
+    /* height: 1000px; */
+    min-height: 100vh;
+}
+
+.main-body {
+    width: 100%;
+    position: absolute;
+    margin-top: 70px;
+    /* top: 80px; */
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+a div {height: 10px;} /* for moving to top of section*/
+
+.side-nav {
+    display: none;
+}
+
+.burger {
+    /* display: inline-block; */
+    width: 35px;
+    height: auto;
+    padding-right: 10px;
+    color: white;
+    font-size: 30pt;
+    float: right;
+
+  }
+
+  .burger span {
+      position: absolute;
+      top: 8px;
+  }
+
+  /* don't touch this */
+  .paddy {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 0;
+  }
+
+  .main-header__name {
+    color: white;
+    float: left;
+    padding-left: 15px;
+}
+
+  .main-header__item-list {
+      height: 100%;
+      list-style: none;
+    margin: 0;
+    padding: 0;
+    border-right: none;
+    display: flex;
+    justify-content: space-between
+  }
+
+  .main-header__item {
+      display: none;
+  }
+
+  #current-page {
+    color: white;
+    float: left;
+    padding-left: 20px;
+    font-size: 20pt;
+}
+
+  .menu-holder {
+      display: block;
+      position: fixed;
+      border: solid;
+      border-color: grey;
+      border-width: 1px;
+      background-color: black;
+      top: 70px;
+      right: -214px; /*;*/
+      z-index: 90;
+      transition: all 200ms linear;
+      
+  }
+
+  .menu-holder.active {
+      right: 0px;
+  }
+
+  .menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-list li {
+    display: block;
+    padding: 1rem; 
+      
+  }
+
+  .menu-list li a {
+    color: white;
+    font-size: 30pt;
+    text-decoration: none;
+  }
+
+  .main-header {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    z-index: 9000;
+  }
+
+  .main-header__nav {
+    /* width: 100%; */
+    height: 50px;
+    padding-top: 20px;
+    /* display:flex; */
+    
+}
+
+  .main-body p {
+    text-align: left;
+    font-size: 1.5em;
+    padding-top:5px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.main-body h3 {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+ul {
+    padding:0;
+    list-style: none;
+}
+
+.project-holder ul li , .job-holder ul li, .education-holder ul li{
+    padding-bottom: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: left;
+}
+
+.project-holder span , .tech-skills-holder span, .job-holder span, .education-holder span{
+    font-size: 22px;;
+}
+
+.footer-menu-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    
+}
+
+.footer-menu-item {
+    padding: 0 6vw;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    background-color: white;
+    width: 70%;
+    height: 300px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+@media all and (min-width: 801px){
+
+.main-header{
+   position: fixed;
+   width: 100%;
+   background-color: black;
+   height: 70px;
+   padding: 0, 1.5rem; /* 0 is left and right, 1.5 is top and bottom*/
+   
+}
+
+.main-header__item-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    border-right: none;
+    
+}
+
+ul li {
+    display: inline-block;
+} 
+
+.burger {
+    display: none;
+  }
+
+  .paddy {
+    display: none;
+  }
+
+.main-header__name {
+    color: white;
+    float: left;
+    padding-left: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main-header__item {
+    margin: 0 1rem;
+    padding: 0;
+    float: right;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main-header__item a {
+    /* font-family: 'Raleway', sans-serif; */
+    color: white;
+    text-decoration: none;
+}
+
+.main-header__nav {
+    /* width: 100%; */
+    height: auto;
+    padding-top: 20px;
+    /* display:flex; */
+    
+}
+
+.main-header__item a:hover {
+    color: yellow;
+}
+
+/* .menu-holder {
+    display: none;
+} */
+
+.side-nav{
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    background-color: black;
+    border: solid;
+    border-width: 1px;
+    border-color: grey;
+    height: 100%;
+    min-width: 300px;
+}
+
+.side-nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.side-nav-page-name {
+    display: block;
+    text-align: center;
+    color: white;
+}
+
+.side-nav-item {
+    display: block;
+    padding: 1rem;
+    color: white;
+    border: solid;
+    border-width: 1px;
+    border-color: grey;
+    cursor: pointer;
+    text-align: center;
+}
+
+}
+
+/* @media all and (max-width: 800px){
+    .main-header{
+        width: 100%;
+        background-color: black;
+        height: 60px;
+        padding: 0, 1.5rem;
+        min-height: 60px;
+     }
+
+     .main-header__item-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: right;
+        border-right: none;
+        
+    }
+
+    ul li {
+        display: inline-block;
+    }
+    
+    .main-header__name {
+        color: white;
+        float: left;
+        padding-left: 15px;
+    }
+    
+    .main-header__item {
+        margin: 0 1rem;
+        padding: 0;
+        float: right;
+    }
+    
+    .main-header__item a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .main-header__item a:hover {
+        color: yellow;
+    }
+
+    .menu-holder {
+        display: none;
+    }
+
+    .side-nav{
+        position: fixed;
+        top: 60px;
+        left: 0px;
+        background-color: black;
+        border: solid;
+        border-width: 1px;
+        border-color: grey;
+        height: 100%;
+        min-width: 200px;
+    }
+    
+    .side-nav-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .side-nav-page-name {
+        display: block;
+        text-align: center;
+        color: white;
+    }
+    
+    .side-nav-item {
+        display: block;
+        padding: 1rem;
+        color: white;
+        border: solid;
+        border-width: 1px;
+        border-color: grey;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .main-header__nav { 
+        height: auto;
+        padding-top: 20px; 
+    }
+
+} */
