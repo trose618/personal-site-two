@@ -1,0 +1,28 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 3001\" \"open http://localhost:3001/\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trose618/personal-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trose618/personal-site/issues"
+  },
+  "homepage": "https://github.com/trose618/personal-site#readme",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "http-server": "^0.11.1",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.0",
+    "puppeteer": "^1.17.0"
+  }
+}
